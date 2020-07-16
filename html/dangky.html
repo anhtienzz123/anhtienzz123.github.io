@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ĐĂNG KÝ</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="../css/dangky.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <style>
+    .ktra {
+      color: red;
+      font-style: italic;
+    }
+  </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="fixed-top" style="background-color: #d62f12e5;">
+    <div class="container">
+      <div class="row">
+
+        <div class=" col-xs-3  col-sm-3 col-md-3  col-lg-3" style="margin-top: -10px;">
+          <div class="container logo">
+            <p style="display:inline; font-size: 150%;"><a href="TrangChu.html" style="color: white;">Phúc Tiên Store</a></p>
+          </div>
+          <p style="display:inline" class="hethongbanle">Hệ Thống bán lẻ uy tính</p>
+        </div>
+
+        <div class=" col-xs-4  col-sm-4 col-md-4 col-lg-4">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Tên Laptop, hãng sản xuất, cấu hình... ">
+              <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-xs-2  col-sm-2 col-md-2  col-lg-2" style="margin-top: -4px;">
+
+          <p class="hotline">19008948</p>
+          <p class="hotro">Hotline hỗ trợ bán hàng</p>
+        </div>
+
+        <div class=" col-xs-3  col-sm-3 col-md-3 col-lg-3 dinhdanga">
+          <div class="row">
+
+            <div style="margin-right: 2%;">
+              <a href="GioHang.html"><button class="btn btn-outline-warning"> <i class="fas fa-shopping-cart"></i> Giỏ hàng </button></a>
+            </div>
+
+
+            <div id="odangnhap">
+              <button id="nutdangnhap" class="btn btn-outline-warning"><i class="fas fa-users"></i> Đăng nhập
+              </button>
+
+              <div id="bangdangnhap">
+                <a href="DangNhap.html"><button class="btn btn-warning"><i class="fas fa-users"></i> Đăng
+                    nhập</button></a>
+                <a href="DangNhap.html"><button class="btn btn-warning"><i class="fas fa-registered"></i> Tạo tài
+                    khoản</button></a>
+                <a href="DangNhap.html"><button class="btn btn-primary"><img src="../image/logo/fb.png"> Đăng nhập
+                    Facebook
+                  </button></a>
+                <a href="DangNhap.html"><button class="btn btn-danger"><img src="../image/logo/google.jpg"> Đăng nhập
+                    Google </button></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </header>
+  <!-- CONTENT -->
+  <div class="container-fluid"
+    style="  margin-top: 0.7%;background-image: url(../image/dangky/hinh-nen-Galaxy-Wallpaper-23.jpg);">
+    <div class="row my-1">
+      <div class="col-xs-col-lg-6 col-sm-6 com-md-6 col-lg-6 col-xl-6 ">
+        <img src="../image/dangky/Lovepik_com-832282987-Hand drawn cartoon laptop.png" alt=""
+          style="width: 95%; padding-left:40px ;">
+      </div>
+
+
+      <div class="col-xs-col-lg-6 col-sm-6 com-md-6 col-lg-6 col-xl-6 content ">
+        <div class="container form">
+          <h4 style="display: inline ">Đăng Ký</h4>
+          <br>
+          <br>
+
+          <form name="formThongTin">
+
+            <table class="tabledk" style="width: 100%;padding: 30px;">
+              <tr style="margin-bottom:50px">
+                <td class="lable1">Họ Tên</td>
+                <td>
+                  <input type="text" name="hoten" placeholder=" Nhập họ tên" class="form-control" id="hoten"
+                    onblur="ktraHoTen()">
+                  <span class="ktra" id="er1"></span>
+                </td>
+
+              </tr>
+
+              <tr>
+                <td>Số điện thoại</td>
+                <td>
+
+                  <input type="text" onblur="ktraSDT()" name="sdt" placeholder=" Nhập số điện thoại"
+                    class="form-control" id="sodienthoai">
+                  <span class="ktra" id="er2"></span>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td>Email</td>
+                <td>
+                  <input type="text" name="email" placeholder=" Nhập Email" class="form-control" id="email"
+                    onblur="ktraEmail()">
+                  <span class="ktra" id="er3"></span>
+                </td>
+
+              </tr>
+
+              <tr>
+                <td>Mật khẩu</td>
+                <td>
+                  <input type="password" onblur="ktraMatKhau()" name="matkhau" placeholder=" Mật khẩu từ 8 đến 16 ký tự"
+                    class="form-control" id="matkhau">
+                  <span class="ktra" id="er4"></span>
+                </td>
+
+              </tr>
+
+              <tr>
+                <td>Xác nhận mật khẩu</td>
+                <td>
+                  <input type="password" onblur="xacnhanMatKhau()" name="xacnhanmatkhau" placeholder=" Nhập lại mật khẩu"
+                    class="form-control " id="xacnhanmatkhau">
+                  <span class="ktra" id="er5"></span>
+                </td>
+
+              </tr>
+
+              <tr>
+                <td>Giới tính</td>
+                <td>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio1">
+                      <input type="radio" class="form-check-input" id="radio1" name="gioitinh" value="Nam" checked>Nam
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio2">
+                      <input type="radio" class="form-check-input" id="radio2" name="gioitinh" value="Nữ">Nữ
+                    </label>
+                  </div>
+
+                </td>
+
+              </tr>
+
+              <tr>
+                <td>Ngày Sinh</td>
+                <td> <input type="date" name="ngaysinh" class="form-control" min="2018-01-01" max="2018-12-31"
+                    value="2018-05-18"></td>
+
+              </tr>
+
+            </table>
+            <br>
+            <input type="checkbox" name="" id="">
+            <span>Nhận các thông tin và chương
+              trình khuyến mãi của shop
+              qua Email</span>
+            <br>
+
+
+            <button type="button" class="btn btn-warning" data-toggle="modal" 
+              data-target="#myModal" id="dangky" onclick="hienThiDuLieu()" style="width: 100%;">
+              Tạo tài khoản</button>
+
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+              <script>
+           
+              </script>
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" >Nội dung đăng ký tài khoản</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body" id="hienthiThongTin">
+                    <table class="table table-hover">
+                      <tbody>
+                        <tr>
+                          <td>Họ tên</td>
+                          <td class="modalThongTin"></td>
+                        </tr>
+                        <tr>
+                          <td>Số điện thoại</td>
+                          <td class="modalThongTin"></td>
+                        </tr>
+                        <tr>
+                          <td>Email</td>
+                          <td class="modalThongTin"></td>
+                        </tr>
+                        <tr>
+                          <td>Mật Khẩu</td>
+                          <td class="modalThongTin"></td>
+                        </tr>
+                        <tr>
+                          <td>Giới tính</td>
+                          <td class="modalThongTin"></td>
+                        </tr>
+                        <tr>
+                          <td>Ngày sinh</td>
+                          <td class="modalThongTin"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </form>
+          <br>
+          <p>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo <a href="#"
+              style="text-decoration: none;"><b>điều kiện sử dụng
+                và chính sách của Phúc tiên Store.</b></a></p>
+
+
+
+        </div>
+
+        <div class="container">
+          <br>
+        </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  </div>
+
+
+
+
+
+
+  <footer class="py-5 my-3 bg-white">
+    <div class="container ">
+      <div class="row">
+        <div class="col-6 ulfooter">
+          <h5 xss=removed>Phúc Tiên Store</h5>
+          <hr>
+
+          <p>Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh</p>
+          <p>Hotline bán hàng: 0935050235 (Tiên Huỳnh)</p>
+          <p>Hotline kỹ thuật: 0954523021 (Hoàng Phúc)</p>
+          <p>Email: sale.hotboyphuyen@gmail.com</p>
+          <div class="container">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google-plus"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-3 ulfooter">
+          <h5>CHÍNH SÁCH CHUNG</h5>
+          <hr>
+
+          <p><a href="gioithieu.html">Chính sách đổi trả hàng</a></p>
+          <p><a href="gioithieu.html">Chính sách vận chuyển</a></p>
+          <p><a href="gioithieu.html">Chính sách bán hàng online</a></p>
+          <p><a href="gioithieu.html">Chính sách bảo hành</a></p>
+          <p><a href="gioithieu.html">Chính sách trả góp</a></p>
+
+
+        </div>
+
+        <div class="col-3 ulfooter">
+          <h5>TRỢ GIÚP</h5>
+
+          <hr>
+
+
+          <p><a href="gioithieu.html">Giới thiệu</a></p>
+          <p><a href="gioithieu.html">Thông tin liên lạc</a></p>
+          <p><a href="gioithieu.html">Hướng dẫn mua hàng online</a></p>
+          <p><a href="gioithieu.html">Hướng dẫn trả góp</a></p>
+          <p><a href="gioithieu.html">Chính sách bảo hành</a></p>
+          <p xss=removed><a href="gioithieu.html">Chính sách trả góp</a></p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <div class="bg-light contaier-fluid " style="font-size: 13px;color: slategray;text-align: center;">
+    ©2005-2020 Phúc Tiên Store Copyright, All Rights Reserved.
+    <br>
+    <br>
+  </div>
+
+
+
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/dangky.js"></script>
+  <script src="../js/dangnhap.js"></script>
+
+</body>
+
+</html>
